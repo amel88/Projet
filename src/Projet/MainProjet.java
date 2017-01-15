@@ -8,9 +8,9 @@ import java.sql.Statement;
 public class MainProjet {
 
 	public static void main(String[] args) {
-	Connect();
+	//Connect();
 	
-	
+	Fenetre fen=new Fenetre();
 	
 	
 
@@ -28,7 +28,7 @@ public class MainProjet {
 		      System.out.println("Driver O.K.");
 
 
-		      String url = "jdbc:postgresql://localhost:5432/Ecole";
+		      String url = "jdbc:postgresql://localhost:5432/campus";
 
 		      String user = "postgres";
 
@@ -44,7 +44,7 @@ public class MainProjet {
 
 		      //L'objet ResultSet contient le résultat de la requête SQL
 
-		      ResultSet result = state.executeQuery("SELECT * FROM ETUDIANT");
+		      ResultSet result = state.executeQuery("SELECT * FROM SALLE ");
 
 		      //On récupère les MetaData
 
@@ -52,7 +52,7 @@ public class MainProjet {
 
 		         
 
-		      System.out.println("\n**********************************************************");
+		      System.out.println("\n**************************************************************************");
 
 		      //On affiche le nom des colonnes
 
@@ -62,7 +62,7 @@ public class MainProjet {
 
 		         
 
-		      System.out.println("\n**********************************************************");
+		      System.out.println("\n**************************************************************************");
 
 		         
 
@@ -74,7 +74,7 @@ public class MainProjet {
 
 		            
 
-		        System.out.println("\n----------------------------------------------------------");
+		        System.out.println("\n--------------------------------------------------------------------------");
 
 		      }
 
